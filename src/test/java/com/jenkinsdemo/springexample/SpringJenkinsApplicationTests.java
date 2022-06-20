@@ -14,10 +14,11 @@ import org.slf4j.LoggerFactory;
 @SpringBootTest
 class SpringJenkinsApplicationTests {
 
-	static Logger logger= LoggerFactory.getLogger(SpringJenkinsApplicationTests.class);
+	public static Logger logger= LoggerFactory.getLogger(SpringJenkinsApplicationTests.class);
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 		logger.info("test case executing..");
+		logger.info("test case executing second statement");
 		assertEquals(true, true);
 	}
 
